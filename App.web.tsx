@@ -1,12 +1,12 @@
 import React from 'react';
 import {View, Text} from 'react-native';
 
-const Component: React.FC = () => {
+function App() {
   return (
     <View>
-      <Text>Hello from React Native</Text>
+      <Text>Hello world from react native</Text>
     </View>
   );
-};
+}
 
-export default Component;
+export default App;
