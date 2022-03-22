@@ -1,7 +1,8 @@
 const custom = require('../webpack.config.js');
 
 module.exports = {
-  "stories": ['../src/components/**/*.stories.[tj]s'],
+  "stories": ['../src/components/**/*.story.(js|jsx|ts|tsx)'],
+  addons: ['@storybook/addon-knobs'],
   webpackFinal: (config) => {
     return {
       ...config,
